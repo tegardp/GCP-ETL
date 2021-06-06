@@ -1,0 +1,8 @@
+airflow.db
+airflow.cfg
+airflow-webserver.pid
+webserver_config.py
+logs
+__pycache__/ 
+data-warehouse.sqlite
+env.json

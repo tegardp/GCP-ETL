@@ -1,0 +1,17 @@
+{
+	"global": {
+		"PROJECT_ID": "your-project-id",
+		"GCE_REGION": "your-region",
+		"COMPOSER_BUCKET": "your-composer-bucket"
+	},
+	"week2": {
+		"SOURCE_BUCKET": "csv-data-source-bucket",
+		"SOURCE_TABLE": "project-id.datasets.table",
+		"DESTINATION_BUCKET": "your-destination-bucket",
+		"DESTINATION_TABLE": "your-project-id.staging.table",
+		"DWH_DATASET": "your-project-id.dwh",
+		"POSTGRE_HOST": "your-postgre-host",
+		"POSTGRE_USER":"your-username",
+		"POSTGRE_PASSWORD":"your-password"
+	}
+}
