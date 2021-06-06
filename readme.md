@@ -1,4 +1,4 @@
-![alt Google Cloud |width=250](https://www.pointstar.co.id/wp-content/uploads/2018/11/Google-Cloud-P.png)
+![alt Google Cloud](https://www.pointstar.co.id/wp-content/uploads/2018/11/Google-Cloud-P.png&s=250)
 
 # GCP-ETL
 
