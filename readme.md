@@ -25,37 +25,17 @@ We're going to use some services from Google Cloud Platform here:
 5. Cloud SQL
 
 ## Installation
-requirements: you sould have Airflow installed. If you don't know how to install it, [read here](https://airflow.apache.org/docs/apache-airflow/stable/installation.html)
+1. Create your [Project](https://cloud.google.com/dataflow/docs/quickstarts/quickstart-python#before-you-begin)
+2. Setup [Google Composer Environment](https://cloud.google.com/composer/docs/quickstart#creating_an_environment)
+3. Put `dags` and `dataflow_function` folder into your composer's bucket
+4. Setup Composer Variable using the example in `config/env-example.json`
 
-first init your database
-```
-airflow db init
-```
+## Result
+![alt daily search result](output/1.png)
 
-then create admin user
-```
-$ airflow users create \
-          --username admin \
-          --firstname FIRST_NAME \
-          --lastname LAST_NAME \
-          --role Admin \
-          --email admin@example.org
-```
+![alt most searched keyword](output/2.png)
 
-after that you can run airflow web ui via
-```
-airflow webserver
-```
-
-and in another terminal command below to schedule your dag
-
-```
-airflow scheduler
-```
-
-You can access Airflow UI in `localhost:8080` on your favorite web browser. Input username and password `airflow` and `airflow` if asked
-
-Don't forget to setup Composer variables. You can look at `config/env-example.json` for example. Fill it then upload it on composer variables.
+![alt event](output/3.png)
 
 # Glossary
 
